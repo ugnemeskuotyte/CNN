@@ -37,5 +37,5 @@ Below is the Dockerfile used for this project:
     EXPOSE 6006
     CMD [ "python", "training.py" ]
 
-Docker Hub link: https://hub.docker.com/r/ugnem/neural_network/tags
+Docker Hub link: https://hub.docker.com/r/ugnem/neural_network/tags </br>
 Pull link: docker pull ugnem/neural_network:latest
