@@ -28,14 +28,14 @@ This project contains the code of a convolutional neural network for the MNIST F
 To run the project pull the project from the Hub with command: docker pull ugnem/neural_network:latest. After the image has been pulled run a container with command: docker run -it --name container_name ugnem/neural_network:latest. After the neural network goes through 50 epochs the programme will ask you to name the run and whether you want to save the model parameters with a yes/no answer. After this is done, a tensorboard command is launched and you can open the tensorboard with the localhost link provided. If you do not see some of the model results, please wait until it loads. Depending on how many models you have launched, this might take up to an hour. Close the tensorboard by pressing ctrl+c in the terminal.
 
 ## Dockerfile
-Below is the Dockerfile used for this project:
-    FROM python:3.9-slim
-    WORKDIR /app
-    COPY requirements.txt .
-    RUN pip install --no-cache-dir -r requirements.txt
-    COPY . .
-    EXPOSE 6006
-    CMD [ "python", "training.py" ]
+Below is the Dockerfile used for this project: <br>
+    FROM python:3.9-slim <br>
+    WORKDIR /app <br>
+    COPY requirements.txt . <br>
+    RUN pip install --no-cache-dir -r requirements.txt <br>
+    COPY . . <br>
+    EXPOSE 6006 <br>
+    CMD [ "python", "training.py" ] <br>
 
 Docker Hub link: https://hub.docker.com/r/ugnem/neural_network/tags </br>
 Pull link: docker pull ugnem/neural_network:latest
